@@ -1,0 +1,83 @@
+.menu{
+  &-list{
+    display: flex;
+    list-style: none;
+    font-size: 2.3rem;
+    justify-content: center;
+    // gap: 2rem;
+    color: $yellow-dark;
+  }
+  &-item{
+    padding: 2rem;
+    transition: .1s;
+    cursor: pointer;
+    &:hover{
+      background-color: $yellow-light-2;
+      color: #fff;
+    }
+
+    &-active{
+      background-color: $yellow-dark;
+      color: #fff;
+    }
+  }
+
+  &-food{
+    &-active[data-tab-content]{
+      display: block;
+    }
+  }
+
+  &-table{
+    text-align: center;
+  }
+
+  &-content{
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  &-heading{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  &-card{
+    width: 40rem;
+    border: 1px solid $yellow-dark;
+    border-radius: 6px;
+    padding: 2rem;
+    @include respond(454px){
+      width: 25rem;
+    }
+    &-info{
+      display: flex;
+      justify-content: space-between;
+      font-size: 2.3rem;
+      margin-bottom: 1.2rem;
+    }
+    &-name{
+      color: $yellow-dark-3;
+    }
+    &-price{
+      color: $blue-dark;
+    }
+
+    &-text{
+      color: $blue-dark;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+
+  }
+
+
+
+}
+
+[data-tab-content]{
+  display: none;
+}

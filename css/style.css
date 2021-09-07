@@ -282,3 +282,63 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  font-size: 2.3rem;
+  justify-content: center;
+  color: #fab005; }
+
+.menu-item {
+  padding: 2rem;
+  transition: .1s;
+  cursor: pointer; }
+  .menu-item:hover {
+    background-color: #ffe066;
+    color: #fff; }
+  .menu-item-active {
+    background-color: #fab005;
+    color: #fff; }
+
+.menu-food-active[data-tab-content] {
+  display: block; }
+
+.menu-table {
+  text-align: center; }
+
+.menu-content {
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; }
+
+.menu-heading {
+  font-size: 2rem;
+  padding: 1rem 2rem; }
+
+.menu-card {
+  width: 40rem;
+  border: 1px solid #fab005;
+  border-radius: 6px;
+  padding: 2rem; }
+  @media only screen and (max-width: 454px) {
+    .menu-card {
+      width: 25rem; } }
+  .menu-card-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.3rem;
+    margin-bottom: 1.2rem; }
+  .menu-card-name {
+    color: #e67700; }
+  .menu-card-price {
+    color: #17243D; }
+  .menu-card-text {
+    color: #17243D;
+    font-size: 1.4rem;
+    line-height: 2rem; }
+
+[data-tab-content] {
+  display: none; }
