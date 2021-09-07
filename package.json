@@ -1,0 +1,17 @@
+{
+  "name": "thai",
+  "version": "1.0.0",
+  "description": "a website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx node-sass ./sass/main.scss ./css/style.css -w",
+    "start": "npx live-server"
+  },
+  "author": "chaddoge",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1"
+  }
+}

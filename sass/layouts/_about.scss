@@ -1,0 +1,37 @@
+.about-us{
+  &-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8rem;
+    @include respond(1250px){
+      flex-direction: column;
+    }
+  }
+  &-image{
+    margin: 0 3rem;
+    width: 40rem;
+    height: auto;
+
+    @include respond(900px){
+      width: 30rem;
+    }
+    @include respond(476px){
+      width: 20rem;
+    }
+  }
+  &-para{
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: $blue-dark;
+    @include respond(1250px){
+      text-align: center;
+    }
+  }
+  &-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+}

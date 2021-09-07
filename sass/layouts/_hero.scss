@@ -1,0 +1,76 @@
+.hero{
+  display: flex;
+  height: 92.2vh;
+ 
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  @include respond(1167px){
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 2rem 0;
+    align-items: center;
+  }
+  @include respond(399px){
+    margin-top: 4rem;
+  }
+
+  &-img{
+    width: 60rem;
+    height: auto;
+    @include respond(1167px){
+      width: 50rem;
+    }
+    @include respond(560px){
+      width: 35rem;
+    }
+  }
+
+  &-text{
+    font-size: 5rem;
+    color: $yellow-dark-2;
+    @include respond(1167px){
+      font-size: 3rem;
+    }
+    &-container{
+      width: 75%;
+      @include respond(800px){
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      p, a{
+        margin: 2rem 0;
+      }
+    }
+  }
+
+  &-special{
+    color: $yellow-dark-3;
+  }
+
+  &-para{
+    font-size: 2rem;
+    color:$blue-dark;
+    @include respond(800px){
+      width: 50rem;
+    }
+    @include respond(517px){
+      width: 35rem;
+    }
+  }
+
+  &-btn:link, &-btn:visited{
+    color: $yellow-dark-2;
+    font-size: 2rem;
+    display: inline-block;
+    transition: .2s;
+    &:hover{
+      background-color: $yellow-dark-2;
+      color: white;
+      text-decoration: none;
+      transform: translateY(-.5rem);
+      box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+}

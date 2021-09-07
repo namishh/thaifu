@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+.section {
+  padding: 0 2rem; }
+
+* {
+  font-family: 'Rubik', sans-serif; }
+
+.heading-primary {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #17243D;
+  margin: 3rem 0; }
+
+.heading-secondary {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #e67700; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  transition: .3s;
+  align-items: center;
+  padding: 1rem 2rem; }
+  @media only screen and (max-width: 680px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 2.4rem;
+      overflow: hidden; } }
+  @media only screen and (max-width: 680px) {
+    .navbar-start {
+      margin-bottom: 2rem;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center; } }
+  .navbar-logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .6rem; }
+    .navbar-logo-img {
+      font-size: 3rem;
+      color: #fab005; }
+    .navbar-logo-name {
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fab005;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+  .navbar-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem; }
+    @media only screen and (max-width: 680px) {
+      .navbar-list {
+        flex-direction: column;
+        margin-bottom: 2rem; } }
+  .navbar-link:link, .navbar-list:visited, .navbar-link {
+    color: #e67700;
+    text-decoration: none;
+    transition: .3s; }
+    .navbar-link:link:hover, .navbar-list:visited:hover, .navbar-link:hover {
+      color: #fab005; }
+  .navbar-btn:link, .navbar-btn:visited, .navbar-btn {
+    background: #fab005;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    color: white; }
+    .navbar-btn:link:hover, .navbar-btn:visited:hover, .navbar-btn:hover {
+      color: white;
+      background: #e67700; }
+    @media only screen and (max-width: 680px) {
+      .navbar-btn:link, .navbar-btn:visited, .navbar-btn {
+        padding: 0;
+        color: #e67700;
+        text-decoration: none;
+        background-color: white; }
+        .navbar-btn:link:hover, .navbar-btn:visited:hover, .navbar-btn:hover {
+          background-color: white;
+          color: #fab005; } }
+  .navbar-toggle {
+    position: absolute;
+    transition: all .3s;
+    visibility: 0;
+    opacity: 0;
+    top: 0;
+    pointer-events: none;
+    cursor: pointer;
+    height: .3rem;
+    width: 3rem;
+    background: #e67700;
+    position: relative; }
+    .navbar-toggle-wrapper {
+      position: relative;
+      cursor: pointer; }
+      @media only screen and (max-width: 680px) {
+        .navbar-toggle-wrapper {
+          visibility: visible;
+          opacity: 1;
+          pointer-events: all;
+          height: 4rem; } }
+    @media only screen and (max-width: 680px) {
+      .navbar-toggle {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+        top: 2rem; } }
+    .navbar-toggle::after {
+      content: '';
+      position: absolute;
+      height: .3rem;
+      width: 2rem;
+      background: #e67700;
+      top: -0.8rem; }
+    .navbar-toggle::before {
+      content: '';
+      position: absolute;
+      height: .3rem;
+      width: 2.6rem;
+      background: #e67700;
+      top: +0.8rem; }
+  .navbar-visible {
+    height: 23.2rem;
+    background-color: #fff; }
+  .navbar-toggle-active {
+    transition: .4s;
+    background-color: #fff; }
+    .navbar-toggle-active::before {
+      content: '';
+      position: absolute;
+      height: .3rem;
+      width: 3rem;
+      transform: rotateZ(-45deg);
+      background: #e67700;
+      top: 0rem; }
+    .navbar-toggle-active::after {
+      content: '';
+      position: absolute;
+      height: .3rem;
+      width: 3rem;
+      transform: rotateZ(45deg);
+      background: #e67700;
+      top: 0rem; }
+
+.hero {
+  display: flex;
+  height: 92.2vh;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem; }
+  @media only screen and (max-width: 1167px) {
+    .hero {
+      flex-direction: column-reverse;
+      text-align: center;
+      margin: 2rem 0;
+      align-items: center; } }
+  @media only screen and (max-width: 399px) {
+    .hero {
+      margin-top: 4rem; } }
+  .hero-img {
+    width: 60rem;
+    height: auto; }
+    @media only screen and (max-width: 1167px) {
+      .hero-img {
+        width: 50rem; } }
+    @media only screen and (max-width: 560px) {
+      .hero-img {
+        width: 35rem; } }
+  .hero-text {
+    font-size: 5rem;
+    color: #f59f00; }
+    @media only screen and (max-width: 1167px) {
+      .hero-text {
+        font-size: 3rem; } }
+    .hero-text-container {
+      width: 75%; }
+      @media only screen and (max-width: 800px) {
+        .hero-text-container {
+          display: flex;
+          align-items: center;
+          flex-direction: column; } }
+      .hero-text-container p, .hero-text-container a {
+        margin: 2rem 0; }
+  .hero-special {
+    color: #e67700; }
+  .hero-para {
+    font-size: 2rem;
+    color: #17243D; }
+    @media only screen and (max-width: 800px) {
+      .hero-para {
+        width: 50rem; } }
+    @media only screen and (max-width: 517px) {
+      .hero-para {
+        width: 35rem; } }
+  .hero-btn:link, .hero-btn:visited {
+    color: #f59f00;
+    font-size: 2rem;
+    display: inline-block;
+    transition: .2s; }
+    .hero-btn:link:hover, .hero-btn:visited:hover {
+      background-color: #f59f00;
+      color: white;
+      text-decoration: none;
+      transform: translateY(-0.5rem);
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3); }
+
+.about-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8rem; }
+  @media only screen and (max-width: 1250px) {
+    .about-us-content {
+      flex-direction: column; } }
+
+.about-us-image {
+  margin: 0 3rem;
+  width: 40rem;
+  height: auto; }
+  @media only screen and (max-width: 900px) {
+    .about-us-image {
+      width: 30rem; } }
+  @media only screen and (max-width: 476px) {
+    .about-us-image {
+      width: 20rem; } }
+
+.about-us-para {
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: #17243D; }
+  @media only screen and (max-width: 1250px) {
+    .about-us-para {
+      text-align: center; } }
+
+.about-us-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
