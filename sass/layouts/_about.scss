@@ -24,6 +24,7 @@
     font-size: 2rem;
     margin: 2rem 0;
     color: $blue-dark;
+    line-height: 3rem;
     @include respond(1250px){
       text-align: center;
     }

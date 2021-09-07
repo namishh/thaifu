@@ -1,0 +1,40 @@
+.card{
+  display: flex;
+  gap: 1rem;
+  width: 45%;
+  border: 1px solid $yellow-dark-2;
+  border-radius: 5px;
+  @include respond(706px){
+    flex-direction: column;
+  }
+  @include respond(1078px){
+    width: 70%;
+  }
+  padding: 2rem;
+  &-heading{
+    color: $yellow-dark-2;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    font-size: 700;
+  }
+
+  &-icon{
+    font-size: 4rem;
+    color: $blue-dark;
+  }
+  &-text{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin-top: 2rem;
+    color: $blue-dark;
+
+  }
+
+  &-wrapper{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+}

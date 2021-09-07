@@ -154,6 +154,39 @@ html {
       background: #e67700;
       top: 0rem; }
 
+.card {
+  display: flex;
+  gap: 1rem;
+  width: 45%;
+  border: 1px solid #f59f00;
+  border-radius: 5px;
+  padding: 2rem; }
+  @media only screen and (max-width: 706px) {
+    .card {
+      flex-direction: column; } }
+  @media only screen and (max-width: 1078px) {
+    .card {
+      width: 70%; } }
+  .card-heading {
+    color: #f59f00;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    font-size: 700; }
+  .card-icon {
+    font-size: 4rem;
+    color: #17243D; }
+  .card-text {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin-top: 2rem;
+    color: #17243D; }
+  .card-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4rem; }
+
 .hero {
   display: flex;
   height: 92.2vh;
@@ -239,7 +272,8 @@ html {
 .about-us-para {
   font-size: 2rem;
   margin: 2rem 0;
-  color: #17243D; }
+  color: #17243D;
+  line-height: 3rem; }
   @media only screen and (max-width: 1250px) {
     .about-us-para {
       text-align: center; } }
