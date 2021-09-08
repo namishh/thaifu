@@ -12,15 +12,23 @@ html{
 }
 
 .home-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  background-color: #FFF;
   position: absolute;
   top: 2rem;
   left: 2rem;
   font-size: 2.5rem;
   a:link, a:visited{
+    margin-top: .5rem;
     text-decoration: none;
 
     i{
-      color: #17243D;
+      color: $blue-dark;
     }
   }
 }

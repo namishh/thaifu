@@ -16,6 +16,10 @@
   }
 
   &-container{
+    @include respond(1006px){
+      height: 100%;
+      width: 100%;
+    }
     width: 80rem;
     padding: 2.5rem 4rem;
     background-color: #fff;
@@ -93,6 +97,13 @@
     &:hover{
       color: $blue-dark;
       background-color: #fff;
+    }
+  }
+
+  &-heading{
+    @include respond(1006px){
+      margin-top: -.3rem;
+
     }
   }
 }

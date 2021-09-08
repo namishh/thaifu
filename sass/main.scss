@@ -1,7 +1,8 @@
-@import './base/base';
 @import './base/variables';
+@import './base/base';
 @import './base/typography';
 @import './base/mixins';
+@import './base/utilities';
 
 @import './components/navbar';
 @import './components/card';

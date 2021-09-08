@@ -10,11 +10,19 @@ html {
   padding: 0 2rem; }
 
 .home-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  background-color: #FFF;
   position: absolute;
   top: 2rem;
   left: 2rem;
   font-size: 2.5rem; }
   .home-btn a:link, .home-btn a:visited {
+    margin-top: .5rem;
     text-decoration: none; }
     .home-btn a:link i, .home-btn a:visited i {
       color: #17243D; }
@@ -32,6 +40,9 @@ html {
   font-size: 2.5rem;
   text-align: center;
   color: #e67700; }
+
+.mt-med {
+  margin-top: 4rem; }
 
 .navbar {
   display: flex;
@@ -142,7 +153,7 @@ html {
       background: #e67700;
       top: +0.8rem; }
   .navbar-visible {
-    height: 23.2rem;
+    height: 25.8rem;
     background-color: #fff; }
   .navbar-toggle-active {
     transition: .4s;
@@ -217,6 +228,10 @@ html {
     padding: 2.5rem 4rem;
     background-color: #fff;
     box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3); }
+    @media only screen and (max-width: 1006px) {
+      .form-container {
+        height: 100%;
+        width: 100%; } }
   .form-row {
     display: flex;
     margin: 3rem 0;
@@ -267,6 +282,9 @@ html {
     .form-btn:hover {
       color: #17243D;
       background-color: #fff; }
+  @media only screen and (max-width: 1006px) {
+    .form-heading {
+      margin-top: -.3rem; } }
 
 .hero {
   display: flex;
