@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./css/style.css">
+  <script crossOrigin = "Anonymous" src="https://unpkg.com/phosphor-icons"></script>
+
+</head>
+<body class="form-body">
+    <div class="home-btn">
+      <a href="/">
+        <i class="ph-house-fill"></i>
+      </a>
+    </div>
+    <div class="form-container">
+      <h1 class="heading-primary">Write To Us!</h1>
+      <form action="#" class="form">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" class="form-input" name="fname" required autocomplete="false">
+            <label for="fname" class="form-label">First Name</label>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-input" name="lname" required autocomplete="false">
+            <label for="lname" class="form-label">Last Name</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <input type="email" class="form-input" name="email" required autocomplete="false" >
+            <label for="email" class="form-label">Email</label>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-input" name="tel"  required autocomplete="false">
+            <label for="tel" class="form-label" >Contact Number</label>
+          </div>
+        </div>
+
+        <div class="form-row form-row-textarea">
+          <div class="form-group">
+            <textarea name="mes" id="mes" class="form-textarea form-input" cols="30" rows="10" required autocomplete="false"></textarea>
+            <label for="mes" class="form-label">Message</label>
+          </div>
+        </div>
+
+        <div class="form-row form-row-submit">
+          <div class="form-group">
+            <button class="form-btn form-input" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
