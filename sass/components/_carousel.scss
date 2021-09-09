@@ -4,7 +4,11 @@
     display: flex;
     overflow: hidden;
     margin: auto;
-    width: 50rem;
+    width: 80rem;
+    @include respond(860px){
+      width: 50rem;
+
+    }
     @include respond(530px){
       width: 35rem;
     }
@@ -17,6 +21,10 @@
     display: flex;
     transition: .3s;
     // width: 50rem;
+    @include respond(860px){
+      width: 50rem;
+
+    }
     @include respond(530px){
       width: 35rem;
     }
@@ -26,7 +34,11 @@
   }
 
   &-slide{
-    width: 50rem;
+    width: 80rem;
+    @include respond(860px){
+      width: 50rem;
+
+    }
     @include respond(530px){
       width: 35rem;
     }
@@ -42,6 +54,7 @@
     gap: 2rem;
 
     button{
+      cursor: pointer;
       background-color: #fff;
       outline: none;
       border: none;

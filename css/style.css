@@ -297,7 +297,10 @@ html {
     display: flex;
     overflow: hidden;
     margin: auto;
-    width: 50rem; }
+    width: 80rem; }
+    @media only screen and (max-width: 860px) {
+      .carousel-container {
+        width: 50rem; } }
     @media only screen and (max-width: 530px) {
       .carousel-container {
         width: 35rem; } }
@@ -307,6 +310,9 @@ html {
   .carousel-inner {
     display: flex;
     transition: .3s; }
+    @media only screen and (max-width: 860px) {
+      .carousel-inner {
+        width: 50rem; } }
     @media only screen and (max-width: 530px) {
       .carousel-inner {
         width: 35rem; } }
@@ -314,7 +320,10 @@ html {
       .carousel-inner {
         width: 30rem; } }
   .carousel-slide {
-    width: 50rem; }
+    width: 80rem; }
+    @media only screen and (max-width: 860px) {
+      .carousel-slide {
+        width: 50rem; } }
     @media only screen and (max-width: 530px) {
       .carousel-slide {
         width: 35rem; } }
@@ -327,6 +336,7 @@ html {
     justify-content: center;
     gap: 2rem; }
     .carousel-btns button {
+      cursor: pointer;
       background-color: #fff;
       outline: none;
       border: none;
@@ -340,7 +350,11 @@ html {
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  width: 80rem; }
+  @media only screen and (max-width: 860px) {
+    .review {
+      width: 50rem; } }
   @media only screen and (max-width: 530px) {
     .review {
       width: 35rem; } }
