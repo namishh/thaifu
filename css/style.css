@@ -383,6 +383,58 @@ html {
     line-height: 2.5rem;
     font-size: 300; }
 
+.gallery {
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem; }
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    @media only screen and (max-width: 1116px) {
+      .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr); } }
+    @media only screen and (max-width: 870px) {
+      .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr); } }
+    @media only screen and (max-width: 482px) {
+      .gallery-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr); } }
+  .gallery-img {
+    width: auto;
+    height: 22rem;
+    transition: .5s; }
+    @media only screen and (max-width: 482px) {
+      .gallery-img {
+        height: 30rem; } }
+    .gallery-img-1 {
+      background: url("/img/food-1.jpg");
+      background-size: cover; }
+    .gallery-img-2 {
+      background: url("/img/food-2.jpg");
+      background-size: cover; }
+    .gallery-img-3 {
+      background: url("/img/food-3.jpg");
+      background-size: cover; }
+    .gallery-img-4 {
+      background: url("/img/food-4.jpg");
+      background-size: cover; }
+    .gallery-img-5 {
+      background: url("/img/food-5.jpg");
+      background-size: cover; }
+    .gallery-img-6 {
+      background: url("/img/food-6.jpg");
+      background-size: cover; }
+    .gallery-img-7 {
+      background: url("/img/food-7.jpg");
+      background-size: cover; }
+    .gallery-img-8 {
+      background: url("/img/food-8.jpg");
+      background-size: cover; }
+
 .hero {
   display: flex;
   height: 92.2vh;
