@@ -388,6 +388,7 @@ html {
   margin: 0;
   margin-top: 2rem; }
   .gallery-container {
+    gap: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr); }
@@ -403,37 +404,16 @@ html {
       .gallery-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(8, 1fr); } }
-  .gallery-img {
+  .gallery-img-container {
     width: auto;
-    height: 22rem;
+    height: 20rem;
     transition: .5s; }
     @media only screen and (max-width: 482px) {
-      .gallery-img {
+      .gallery-img-container {
         height: 30rem; } }
-    .gallery-img-1 {
-      background: url("/img/food-1.jpg");
-      background-size: cover; }
-    .gallery-img-2 {
-      background: url("/img/food-2.jpg");
-      background-size: cover; }
-    .gallery-img-3 {
-      background: url("/img/food-3.jpg");
-      background-size: cover; }
-    .gallery-img-4 {
-      background: url("/img/food-4.jpg");
-      background-size: cover; }
-    .gallery-img-5 {
-      background: url("/img/food-5.jpg");
-      background-size: cover; }
-    .gallery-img-6 {
-      background: url("/img/food-6.jpg");
-      background-size: cover; }
-    .gallery-img-7 {
-      background: url("/img/food-7.jpg");
-      background-size: cover; }
-    .gallery-img-8 {
-      background: url("/img/food-8.jpg");
-      background-size: cover; }
+  .gallery-img {
+    width: 100%;
+    height: 100%; }
 
 .hero {
   display: flex;

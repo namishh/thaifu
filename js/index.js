@@ -52,5 +52,3 @@ prevBtn.addEventListener("click", () => {
   carousel.style.transform = `translateX(${-size * counter}px)`
 })
 
-
-
