@@ -413,7 +413,8 @@ html {
         height: 30rem; } }
   .gallery-img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
 
 .hero {
   display: flex;
