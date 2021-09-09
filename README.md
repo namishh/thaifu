@@ -39,9 +39,11 @@ View Project
 ## Acknowledgements
 
  - [Illustrations](https://undraw.co/)
+ - [Icons](https://phosphoricons.com/)
+ - [User Faces](https://uifaces.co/)
  
 
   
 ## Demo
 
-+ https://thaifu.netlify.app/
+https://thaifu.netlify.app/

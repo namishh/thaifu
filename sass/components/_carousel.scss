@@ -1,0 +1,54 @@
+.carousel{
+  width: 100%;
+  &-container{
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    width: 50rem;
+    @include respond(530px){
+      width: 35rem;
+    }
+    @include respond(392px){
+      width: 30rem;
+    }
+  }
+
+  &-inner{
+    display: flex;
+    transition: .3s;
+    // width: 50rem;
+    @include respond(530px){
+      width: 35rem;
+    }
+    @include respond(392px){
+      width: 30rem;
+    }
+  }
+
+  &-slide{
+    width: 50rem;
+    @include respond(530px){
+      width: 35rem;
+    }
+    @include respond(392px){
+      width: 30rem;
+    }
+  }
+
+  &-btns{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    button{
+      background-color: #fff;
+      outline: none;
+      border: none;
+      font-size: 2rem;
+      font-family: 'Rubik', sans-serif;
+      color: $yellow-dark-3;
+    }
+  }
+
+}

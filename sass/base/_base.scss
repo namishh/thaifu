@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+::selection{
+  background-color: $yellow-dark-2;
+  color: white;
+}
+
 html{
   font-size: 62.5%;
 }
