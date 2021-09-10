@@ -412,9 +412,13 @@ html {
       .gallery-img-container {
         height: 30rem; } }
   .gallery-img {
+    transition: 3s;
     width: 100%;
     height: 100%;
     object-fit: cover; }
+
+.img-blur {
+  filter: blur(4px); }
 
 .hero {
   display: flex;

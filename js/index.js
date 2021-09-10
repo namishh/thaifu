@@ -34,7 +34,13 @@ const nextBtn = document.querySelector("#btn-next")
 const prevBtn = document.querySelector("#btn-prev")
 
 let counter = 0
-const size = carouselItems[0].clientWidth
+let size = carouselItems[0].clientWidth
+
+// Change Size ON Resize
+const sizeChange = () => {
+  size = carouselItems[0].clientWidth
+}
+window.onresize = sizeChange
 
 nextBtn.addEventListener("click", () => {
   counter++
@@ -52,3 +58,28 @@ prevBtn.addEventListener("click", () => {
   carousel.style.transform = `translateX(${-size * counter}px)`
 })
 
+// Lazy Loading
+
+const preloadImage = (image) => {
+  const src = image.getAttribute('data-src')
+  image.src = ''
+  image.src = image.dataset.src
+  image.classList.remove("img-blur")
+}
+
+const images = document.querySelectorAll('[data-src]')
+const options = {
+  threshold: 0,
+  rootMargin : "0px 0px 600px 0px"
+}
+const imgObserver = new IntersectionObserver((entries, imgObserver)=> {
+  entries.forEach(entry => {
+    if(!entry.isIntersecting) return
+    preloadImage(entry.target)
+    imgObserver.unobserve(entry.target)
+  })
+}, options)
+
+images.forEach(image => {
+  imgObserver.observe(image)
+})
