@@ -310,7 +310,6 @@ html {
   margin: 0;
   margin-top: 2rem; }
   .gallery-container {
-    gap: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr); }
@@ -500,13 +499,3 @@ html {
 
 [data-tab-content] {
   display: none; }
-
-.footer {
-  padding: 1.2rem 1.8rem;
-  background-color: #17243D; }
-  .footer-text {
-    color: white;
-    font-size: 1.4rem;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 300; }
