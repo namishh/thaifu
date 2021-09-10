@@ -61,10 +61,8 @@ prevBtn.addEventListener("click", () => {
 // Lazy Loading
 
 const preloadImage = (image) => {
-  const src = image.getAttribute('data-src')
-  image.src = ''
-  image.src = image.dataset.src
   image.classList.remove("img-blur")
+  image.src = image.dataset.src
 }
 
 const images = document.querySelectorAll('[data-src]')

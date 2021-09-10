@@ -55,13 +55,13 @@ html {
   transition: .3s;
   align-items: center;
   padding: 1rem 2rem; }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 848px) {
     .navbar {
       flex-direction: column;
       align-items: flex-start;
       height: 2.4rem;
       overflow: hidden; } }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 848px) {
     .navbar-start {
       margin-bottom: 2rem;
       display: flex;
@@ -89,7 +89,7 @@ html {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem; }
-    @media only screen and (max-width: 680px) {
+    @media only screen and (max-width: 848px) {
       .navbar-list {
         flex-direction: column;
         margin-bottom: 2rem; } }
@@ -107,7 +107,7 @@ html {
     .navbar-btn:link:hover, .navbar-btn:visited:hover, .navbar-btn:hover {
       color: white;
       background: #e67700; }
-    @media only screen and (max-width: 680px) {
+    @media only screen and (max-width: 848px) {
       .navbar-btn:link, .navbar-btn:visited, .navbar-btn {
         padding: 0;
         color: #e67700;
@@ -131,13 +131,13 @@ html {
     .navbar-toggle-wrapper {
       position: relative;
       cursor: pointer; }
-      @media only screen and (max-width: 680px) {
+      @media only screen and (max-width: 848px) {
         .navbar-toggle-wrapper {
           visibility: visible;
           opacity: 1;
           pointer-events: all;
           height: 4rem; } }
-    @media only screen and (max-width: 680px) {
+    @media only screen and (max-width: 848px) {
       .navbar-toggle {
         visibility: visible;
         opacity: 1;
@@ -158,7 +158,7 @@ html {
       background: #e67700;
       top: +0.8rem; }
   .navbar-visible {
-    height: 25.8rem;
+    height: 34.8rem;
     background-color: #fff; }
   .navbar-toggle-active {
     transition: .4s;
@@ -212,84 +212,6 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 4rem; }
-
-.form {
-  padding: 3rem; }
-  @media only screen and (max-width: 622px) {
-    .form {
-      transform: translateX(-3rem); } }
-  @media only screen and (max-width: 422px) {
-    .form {
-      padding: 1rem; } }
-  .form-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: #ffe066; }
-  .form-container {
-    width: 80rem;
-    padding: 2.5rem 4rem;
-    background-color: #fff;
-    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3); }
-    @media only screen and (max-width: 1006px) {
-      .form-container {
-        height: 100%;
-        width: 100%; } }
-  .form-row {
-    display: flex;
-    margin: 3rem 0;
-    width: 100%; }
-    .form-row-textarea {
-      height: 15rem; }
-    @media only screen and (max-width: 622px) {
-      .form-row {
-        flex-direction: column;
-        gap: 2rem; } }
-  .form-group {
-    width: 100%;
-    height: 4rem;
-    margin: 0 2rem;
-    position: relative; }
-  .form-input {
-    display: block;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #17243D;
-    border-radius: 5px;
-    position: relative;
-    padding: 0 1rem;
-    color: #17243D; }
-    .form-input:valid ~ .form-label {
-      top: -2rem;
-      left: 0; }
-    .form-input:focus {
-      outline: none; }
-      .form-input:focus ~ .form-label {
-        top: -2rem;
-        left: 0; }
-    .form-input ~ .form-label {
-      transition: .3s;
-      position: absolute;
-      top: 1.5rem;
-      left: 1rem; }
-  .form-textarea {
-    height: 15rem;
-    padding: 1rem; }
-  .form-btn {
-    cursor: pointer;
-    background-color: #17243D;
-    color: #fff;
-    transition: .3s;
-    margin-top: 3rem;
-    transform: translateX(1rem); }
-    .form-btn:hover {
-      color: #17243D;
-      background-color: #fff; }
-  @media only screen and (max-width: 1006px) {
-    .form-heading {
-      margin-top: -.3rem; } }
 
 .carousel {
   width: 100%; }
@@ -578,3 +500,13 @@ html {
 
 [data-tab-content] {
   display: none; }
+
+.footer {
+  padding: 1.2rem 1.8rem;
+  background-color: #17243D; }
+  .footer-text {
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 300; }

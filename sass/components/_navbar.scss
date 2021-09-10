@@ -4,14 +4,14 @@
   transition: .3s;
   align-items: center;
   padding: 1rem 2rem;
-  @include respond(680px){
+  @include respond(848px){
     flex-direction: column;
     align-items: flex-start;
     height: 2.4rem;
     overflow: hidden;
   }
   &-start{
-    @include respond(680px){
+    @include respond(848px){
       margin-bottom: 2rem;
       display: flex;
       width: 100%;
@@ -44,7 +44,7 @@
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
-    @include respond(680px){
+    @include respond(848px){
       flex-direction: column;
       margin-bottom: 2rem;
     }
@@ -72,7 +72,7 @@
     background: $yellow-dark-3;
 
     }
-    @include respond(680px){
+    @include respond(848px){
       padding: 0;
       color: $yellow-dark-3;
       text-decoration: none;
@@ -89,7 +89,7 @@
 
   &-toggle{
     &-wrapper{
-      @include respond(680px){
+      @include respond(848px){
         visibility: visible;
         opacity: 1;
         pointer-events: all;
@@ -107,7 +107,7 @@
     opacity: 0;
     top: 0;
     pointer-events: none;
-    @include respond(680px){
+    @include respond(848px){
       visibility: visible;
       opacity: 1;
       pointer-events: all;
@@ -138,7 +138,7 @@
   }
 
   &-visible{
-    height: 25.8rem;
+    height: 34.8rem;
     background-color: #fff;
   }
 
