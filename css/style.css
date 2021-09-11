@@ -44,10 +44,10 @@ html {
   visibility: hidden;
   opacity: 0;
   transition: .9s;
-  transform: translateY(5rem); }
+  transform: translateY(10rem); }
 
 .section-visible {
-  transform: translateY(0);
+  transform: translateY(0rem);
   visibility: visible;
   opacity: 1; }
 
@@ -107,17 +107,6 @@ html {
   @media only screen and (max-width: 408px) {
     .navbar {
       height: 3.9rem; } }
-  .navbar-sticky {
-    position: fixed;
-    top: 0;
-    width: 97.5%;
-    background-color: white; }
-    @media only screen and (max-width: 848px) {
-      .navbar-sticky {
-        width: 95%; } }
-    @media only screen and (max-width: 555px) {
-      .navbar-sticky {
-        width: 90%; } }
   @media only screen and (max-width: 848px) {
     .navbar-start {
       margin-bottom: 2rem;

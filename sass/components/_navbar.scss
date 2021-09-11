@@ -23,20 +23,6 @@
     height: 3.9rem;
   }
 
-  &-sticky{
-    position: fixed;
-    top: 0;
-    width: 97.5%;
-    background-color: rgba($color: #fff, $alpha: 1);
-
-    @include respond(848px){
-      width: 95%;
-    }
-
-    @include respond(555px){
-      width: 90%;
-    }
-  }
   &-start{
     @include respond(848px){
       margin-bottom: 2rem;
