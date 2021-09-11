@@ -523,3 +523,26 @@ html {
 
 [data-tab-content] {
   display: none; }
+
+.intro {
+  background-color: #fab005;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .intro-text {
+    color: white;
+    font-size: 4rem;
+    transform: translateY(100%);
+    display: inline-block; }
+    @media only screen and (max-width: 545px) {
+      .intro-text {
+        display: block;
+        text-align: center; } }
+  .intro-hide {
+    background-color: #fab005;
+    overflow: hidden; }

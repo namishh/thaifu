@@ -118,3 +118,9 @@ const heroObserver = new IntersectionObserver((entries, observer) => {
   threshold : .2 
 })
 heroObserver.observe(hero)
+
+// Intro Animation
+const timeline = gsap.timeline({defaults : {ease : "power1.out"}})
+timeline.to('.intro-text', {y : '0%', duration : 0.8, stagger : 0.25})
+timeline.to('.intro', {y : '-100%', duration : 0.8, stagger : 0.25, delay:0.8})
+// timeline.to('.content-wrapper', {y : '0%', duration : .9})

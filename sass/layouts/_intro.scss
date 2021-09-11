@@ -1,0 +1,30 @@
+.intro{
+  background-color: $yellow-dark;
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-text{
+    color: white;
+    font-size: 4rem;
+    transform: translateY(100%);
+    display: inline-block;
+
+    @include respond(545px){
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &-hide{
+    background-color: $yellow-dark;
+    overflow: hidden;
+  }
+
+}
+
