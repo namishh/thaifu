@@ -19,7 +19,6 @@
     top: 0;
     width: 97.5%;
     background-color: rgba($color: #fff, $alpha: .8);
-    backdrop-filter: blur(10px);
 
     @include respond(848px){
       width: 95%;
