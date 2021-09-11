@@ -26,7 +26,7 @@ tabs.forEach(tab => {
   })
 })
 
-// Carousel
+// Reviews
 const carousel = document.querySelector('.carousel-inner')
 const carouselItems = document.querySelectorAll('.carousel-slide')
 
@@ -58,7 +58,7 @@ prevBtn.addEventListener("click", () => {
   carousel.style.transform = `translateX(${-size * counter}px)`
 })
 
-// Lazy Loading
+// Lazy Loading Images
 
 const preloadImage = (image) => {
   image.classList.remove("img-blur")
@@ -81,3 +81,40 @@ const imgObserver = new IntersectionObserver((entries, imgObserver)=> {
 images.forEach(image => {
   imgObserver.observe(image)
 })
+
+// Reveal Elements On Scroll
+const sections = document.querySelectorAll('.section')
+
+const secObserver = new IntersectionObserver((entries, observer) => {
+    const [entry] = entries
+
+    if(!entry.isIntersecting) return
+
+    entry.target.classList.add('section-visible')
+    observer.unobserve(entry.target)
+
+}, {
+  root : null,
+  threshold : 0.1,
+  rootMargin : "0px 0px 100px 0px"
+})
+
+sections.forEach(function(section) {
+  secObserver.observe(section)
+  section.classList.add('section--hidden')
+})
+
+// Sticky Navbar
+const hero = sections[0]
+const heroObserver = new IntersectionObserver((entries, observer) => {
+  const [entry] = entries
+  if(!entry.isIntersecting){
+     navbar.classList.add('navbar-sticky')
+  }else{
+    navbar.classList.remove('navbar-sticky')
+  }
+}, {
+  root:null,
+  threshold : .2 
+})
+heroObserver.observe(hero)

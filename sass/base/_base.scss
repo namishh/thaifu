@@ -14,8 +14,16 @@ html{
 
 .section{
   padding: 0 2rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: .9s;
+  transform: translateY(5rem);
 }
-
+.section-visible{
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
 .home-btn{
   display: flex;
   justify-content: center;

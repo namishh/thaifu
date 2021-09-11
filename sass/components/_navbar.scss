@@ -3,12 +3,31 @@
   justify-content: space-between;
   transition: .3s;
   align-items: center;
+  transition: .9s;
   padding: 1rem 2rem;
+  background-color: #fff;
+  z-index: 23456765;
   @include respond(848px){
     flex-direction: column;
     align-items: flex-start;
-    height: 2.4rem;
+    height: 3.8rem;
     overflow: hidden;
+  }
+
+  &-sticky{
+    position: fixed;
+    top: 0;
+    width: 97.5%;
+    background-color: rgba($color: #fff, $alpha: .8);
+    backdrop-filter: blur(10px);
+
+    @include respond(848px){
+      width: 95%;
+    }
+
+    @include respond(555px){
+      width: 90%;
+    }
   }
   &-start{
     @include respond(848px){

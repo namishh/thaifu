@@ -12,7 +12,16 @@ html {
   font-size: 62.5%; }
 
 .section {
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: .9s;
+  transform: translateY(5rem); }
+
+.section-visible {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1; }
 
 .home-btn {
   display: flex;
@@ -54,13 +63,28 @@ html {
   justify-content: space-between;
   transition: .3s;
   align-items: center;
-  padding: 1rem 2rem; }
+  transition: .9s;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  z-index: 23456765; }
   @media only screen and (max-width: 848px) {
     .navbar {
       flex-direction: column;
       align-items: flex-start;
-      height: 2.4rem;
+      height: 3.8rem;
       overflow: hidden; } }
+  .navbar-sticky {
+    position: fixed;
+    top: 0;
+    width: 97.5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px); }
+    @media only screen and (max-width: 848px) {
+      .navbar-sticky {
+        width: 95%; } }
+    @media only screen and (max-width: 555px) {
+      .navbar-sticky {
+        width: 90%; } }
   @media only screen and (max-width: 848px) {
     .navbar-start {
       margin-bottom: 2rem;
