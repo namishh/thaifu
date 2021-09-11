@@ -1,10 +1,14 @@
 .navbar{
+  animation: fade_in 1s 3.3s forwards;
+  visibility: hidden;
+  opacity: 0;
   display: flex;
   justify-content: space-between;
   transition: .3s;
   align-items: center;
   transition: .9s;
   padding: 1rem 2rem;
+
   background-color: #fff;
   z-index: 23456765;
   @include respond(848px){
@@ -12,13 +16,18 @@
     align-items: flex-start;
     height: 3.9rem;
     overflow: hidden;
+    
+  }
+
+  @include respond(408px){
+    height: 3.9rem;
   }
 
   &-sticky{
     position: fixed;
     top: 0;
     width: 97.5%;
-    background-color: rgba($color: #fff, $alpha: .8);
+    background-color: rgba($color: #fff, $alpha: 1);
 
     @include respond(848px){
       width: 95%;

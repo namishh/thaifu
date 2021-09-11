@@ -1,5 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@keyframes fade_in {
+  0% {
+    visibility: hidden;
+    opacity: 0; }
+  100% {
+    visibility: visible;
+    opacity: 1; } }
+
+@keyframes move_in_right {
+  0% {
+    transform: translateX(100%);
+    @media only screen and (max-width: 1167px) {
+      transform: translateX(200%); } }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes move_in_left {
+  0% {
+    transform: translateX(-100%);
+    @media only screen and (max-width: 1167px) {
+      transform: translateX(-120%); }
+    @media only screen and (max-width: 641px) {
+      transform: translateX(-150%); }
+    @media only screen and (max-width: 503px) {
+      transform: translateX(-225%); } }
+  100% {
+    transform: translateX(0); } }
+
 * {
   padding: 0;
   margin: 0; }
@@ -59,6 +87,9 @@ html {
   margin-top: 4rem; }
 
 .navbar {
+  animation: fade_in 1s 3.3s forwards;
+  visibility: hidden;
+  opacity: 0;
   display: flex;
   justify-content: space-between;
   transition: .3s;
@@ -73,11 +104,14 @@ html {
       align-items: flex-start;
       height: 3.9rem;
       overflow: hidden; } }
+  @media only screen and (max-width: 408px) {
+    .navbar {
+      height: 3.9rem; } }
   .navbar-sticky {
     position: fixed;
     top: 0;
     width: 97.5%;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: white; }
     @media only screen and (max-width: 848px) {
       .navbar-sticky {
         width: 95%; } }
@@ -367,6 +401,7 @@ html {
 .hero {
   display: flex;
   height: 92.2vh;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   gap: 3rem; }
@@ -380,8 +415,17 @@ html {
     .hero {
       margin-top: 4rem; } }
   .hero-img {
+    transform: translateX(100%);
+    animation: move_in_right 1s 2.8s forwards;
     width: 60rem;
     height: auto; }
+    @media only screen and (max-width: 408px) {
+      .hero-img {
+        margin-top: 4rem; } }
+    @media only screen and (max-width: 1167px) {
+      .hero-img {
+        transform: translateX(200%);
+        animation: move_in_right 1.5s 2.8s forwards; } }
     @media only screen and (max-width: 1167px) {
       .hero-img {
         width: 50rem; } }
@@ -395,7 +439,19 @@ html {
       .hero-text {
         font-size: 3rem; } }
     .hero-text-container {
+      transform: translateX(-102%);
+      animation: move_in_left 1s 2.8s  forwards;
       width: 75%; }
+      @media only screen and (max-width: 1167px) {
+        .hero-text-container {
+          transform: translateX(-125%); } }
+      @media only screen and (max-width: 641px) {
+        .hero-text-container {
+          transform: translateX(-150%); } }
+      @media only screen and (max-width: 503px) {
+        .hero-text-container {
+          transform: translateX(-225%);
+          animation: move_in_left 1s 2.8s ease-out forwards; } }
       @media only screen and (max-width: 800px) {
         .hero-text-container {
           display: flex;

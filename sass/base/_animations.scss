@@ -1,0 +1,43 @@
+@keyframes fade_in {
+  0%{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100%{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes move_in_right {
+  0%{
+    transform: translateX(100%);
+    @include respond(1167px){
+      transform: translateX(200%);
+    }
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes move_in_left {
+  0%{
+    transform: translateX(-100%);
+    @include respond(1167px){
+      transform: translateX(-120%);
+    }
+    @include respond(641px){
+      transform: translateX(-150%);
+    }
+    @include respond(503px){
+      transform: translateX(-225%);
+    }
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
