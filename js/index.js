@@ -111,6 +111,7 @@ timeline.to('.intro', {y : '-100%', duration : 0.8, stagger : 0.25, delay:1})
 
 // Smooth Scroll
 const links = document.querySelectorAll('[data-link]')
+// const learnMore = document.querySelectorAll('')
 const linkList = [links]
 const addSmoothScroll = (linkList) => {
   linkList.forEach(list => {
@@ -119,6 +120,7 @@ const addSmoothScroll = (linkList) => {
         e.preventDefault()
         navbar.classList.add('navbar-sticky')
         const section = document.querySelector(`.${link.dataset.link}`)
+        section.classList.add('section-visible')
         const coordinates = section.getBoundingClientRect()
         window.scrollTo({
             left : coordinates.left + window.pageXOffset, 
@@ -132,3 +134,65 @@ const addSmoothScroll = (linkList) => {
 }
 
 addSmoothScroll(linkList)
+
+// Animations
+gsap.registerPlugin(ScrollTrigger)
+
+
+// About 
+const aboutTimeline = gsap.timeline({
+  scrollTrigger : ".section-about-us",
+  start : "center bottom"
+})
+
+aboutTimeline.from(".about-us-image", {x : -200, opacity : 0, duration : .8, stagger : 0.25})
+             .from('.about-us-texts', {x : 200, opacity : 0, duration : .8, delay : -.8})
+
+// Features
+const featuresTimeline = gsap.timeline({
+  scrollTrigger : ".section-features",
+  start : "center bottom"
+})
+
+featuresTimeline.from(".card-1", {x : -300, opacity : 0, duration : 1, stagger : 0.25})
+.from(".card-2", {x : 300, opacity : 0, duration : 1, stagger : 0.25 , delay : -1})
+
+const featuresTimeline2 = gsap.timeline({
+  scrollTrigger : ".card-3",
+  start : "center bottom"
+})
+
+featuresTimeline2.from(".card-3", {x : -300, opacity : 0, duration : 1, stagger : 0.25})
+.from(".card-4", {x : 300, opacity : 0, duration : 1, stagger : 0.25 , delay : -1})
+
+
+// Menu
+const menuTimeline = gsap.timeline({
+  scrollTrigger : ".section-menu",
+  start : "center bottom"
+})
+
+
+menuTimeline.from(".menu-list", {opacity : 0, duration : 1, stagger : 0.25 })
+            .from(".menu-item-1", {x : -200, opacity : 0, duration : 1, stagger : 0.25, delay : -.8})  
+            .from(".menu-item-3", {x : 200, opacity : 0, duration : 1, stagger : 0.25,  delay : -.8 }) 
+            .from(".menu-item-2", {opacity : 0, duration : 1, stagger : 0.25,  delay : -.8 })  
+            .from(".menu-content", {y : -50, opacity : 0, duration : .7, stagger : 0.25,  delay : -.5 })
+            
+// Reviews
+const reviewTimeline = gsap.timeline({
+  scrollTrigger : ".section-reviews",
+  start : "center bottom"
+})
+
+reviewTimeline.from('.carousel', {x : -200, opacity: 0, duration : 1})
+              .from('#btn-next', {opacity : 0, duration : 1, stagger : 0.25, delay : -.5})
+              .from('#btn-prev', {opacity : 0, duration : 1, delay : -.5,  stagger : 0.25})
+
+// Gallery
+const galleryTimeline = gsap.timeline({
+  scrollTrigger : ".section-gallery",
+  start : "center bottom"
+})
+
+galleryTimeline.from(".gallery-container", {opacity : 0, duration : 1, stagger : 0.25 })

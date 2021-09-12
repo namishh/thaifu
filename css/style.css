@@ -39,7 +39,11 @@
 html {
   font-size: 62.5%; }
 
+body {
+  overflow-x: hidden; }
+
 .section {
+  overflow-x: hidden;
   padding: 0 2rem;
   visibility: hidden;
   opacity: 0;

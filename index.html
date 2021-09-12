@@ -14,6 +14,7 @@
   <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
   <link rel="stylesheet" href="./css/style.css">
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script crossOrigin = "Anonymous" src="https://unpkg.com/phosphor-icons"></script>
   <script defer src="./js/index.js"></script>
 </head>
@@ -23,7 +24,7 @@
     <div class="navbar-start">
       <div class="navbar-logo">
         <i class="navbar-logo-img ph-fork-knife-fill"></i>
-        <p class="navbar-logo-name">Patoo</p>
+        <p class="navbar-logo-name">ThaiFu</p>
       </div>
       <div class="navbar-toggle-wrapper">
       <div class="navbar-toggle">
@@ -52,12 +53,12 @@
       <div class="hero-text-container">
         <p class="hero-text">
           Most Premium Thai Cuisine you will ever get.
-          <span class="hero-special">PatooThai</span>
+          <span class="hero-special">Thaify</span>
         </p>
         <p class="hero-para">
-          ‘Patoo’ offers a selection of popular Thai dishes, light snacks and an interesting variety of delicious Thai desserts – all freshly prepared on site by Patoo chefs.
+          ‘Patoo’ offers a selection of popular Thai dishes, light snacks and an interesting variety of delicious Thai desserts – all freshly prepared on site by rewoned chefs.
         </p>
-        <a href="#" class="hero-btn">Learn More &rarr;</a>
+        <a href="#" data-link="about-us" class="hero-btn">Learn More &rarr;</a>
       </div>
       <div class="hero-img-container">
         <img src="./img/hero.svg" alt="" class="hero-img hero-img-1">
@@ -79,7 +80,7 @@
     <section class="section-features section features">
       <h1 class="heading-primary">Our Features</h1>
       <div class="card-wrapper">
-        <div class="card">
+        <div class="card card-1">
           <i class="card-icon ph-knife-fill"></i>
           <div class="card-info">
             <p class="card-heading">The Best Chefs</p>
@@ -89,7 +90,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card card-2">
           <i class="card-icon ph-storefront-fill"></i>
           <div class="card-info">
             <p class="card-heading">More than 100+ branches </p>
@@ -101,7 +102,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card card-3">
           <i class="card-icon ph-currency-circle-dollar-fill"></i>
           <div class="card-info">
             <p class="card-heading">Cost Effective Fine Dine</p>
@@ -112,7 +113,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card card-4">
           <i class="card-icon ph-martini-fill"></i>
           <div class="card-info">
             <p class="card-heading">Lavish Experience</p>
@@ -128,9 +129,9 @@
       <h1 class="heading-primary">Our Menu</h1>
       <div class="menu-wrapper">
         <ul class="menu-list">
-          <li data-tab-target="#breakfast" class="menu-item menu-item-active">Breakfast</li>
-          <li data-tab-target="#lunch" class="menu-item">Lunch</li>
-          <li data-tab-target="#dinner" class="menu-item">Dinner</li>
+          <li data-tab-target="#breakfast" class="menu-item menu-item-active menu-item-1">Breakfast</li>
+          <li data-tab-target="#lunch" class="menu-item menu-item-2">Lunch</li>
+          <li data-tab-target="#dinner" class="menu-item menu-item-3">Dinner</li>
         </ul>
         <div class="menu-content">
           <div id="breakfast" class="menu-food menu-food-active" data-tab-content>
