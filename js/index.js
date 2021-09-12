@@ -103,12 +103,6 @@ sections.forEach(function(section) {
   section.classList.add('section--hidden')
 })
 
-
-// Intro Animation
-const timeline = gsap.timeline({defaults : {ease : "power1.out"}})
-timeline.to('.intro-text', {y : '0%', duration : 0.8, stagger : 0.25, delay : 0.2})
-timeline.to('.intro', {y : '-100%', duration : 0.8, stagger : 0.25, delay:1})
-
 // Smooth Scroll
 const links = document.querySelectorAll('[data-link]')
 // const learnMore = document.querySelectorAll('')
@@ -137,6 +131,17 @@ addSmoothScroll(linkList)
 
 // Animations
 gsap.registerPlugin(ScrollTrigger)
+
+
+// Intro Animation
+const timeline = gsap.timeline({defaults : {ease : "power1.out"}})
+timeline.to('.intro-text', {y : '0%', duration : 0.8, stagger : 0.25, delay : 0.2})
+timeline.to('.intro', {y : '-100%', duration : 0.8, stagger : 0.25, delay:1})
+
+// Home
+const heroTimeline = gsap.timeline()
+heroTimeline.from(".hero-img", {x : 200, opacity: 0, duration : 1, stagger : 0.25, delay : 3.3})
+heroTimeline.from(".hero-text-container", {x : -200, opacity: 0, duration : 1, stagger : 0.25, delay : -1})
 
 
 // About 
@@ -196,3 +201,19 @@ const galleryTimeline = gsap.timeline({
 })
 
 galleryTimeline.from(".gallery-container", {opacity : 0, duration : 1, stagger : 0.25 })
+
+// Form
+const form = document.querySelector('.form')
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+})
+
+const contactTimeline = gsap.timeline({
+  scrollTrigger : ".section-contact",
+  start : "center bottom"
+})
+
+
+contactTimeline.from('.contact-img', {x : -200, opacity: 0, duration : 1})
+              .from('.form', {x: 200, opacity : 0, duration : 1, stagger : 0.25, delay : -.5})
+         

@@ -20,12 +20,6 @@
     @include respond(408px){
       margin-top: 4rem;
     }
-    transform: translateX(100%);
-    @include respond(1167px){
-      transform: translateX(200%);
-    animation: move_in_right 1.5s 2.8s forwards;
-    }
-    animation: move_in_right 1s 2.8s forwards;
     width: 60rem;
     height: auto;
     @include respond(1167px){
@@ -43,18 +37,6 @@
       font-size: 3rem;
     }
     &-container{
-      transform: translateX(-102%);
-      @include respond(1167px){
-        transform: translateX(-125%);
-      }
-      @include respond(641px){
-        transform: translateX(-150%);
-      }
-      @include respond(503px){
-        transform: translateX(-225%);
-      animation: move_in_left 1s 2.8s ease-out forwards;
-      }
-      animation: move_in_left 1s 2.8s  forwards;
       width: 75%;
       @include respond(800px){
         display: flex;

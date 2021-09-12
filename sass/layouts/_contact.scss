@@ -1,0 +1,24 @@
+.contact{
+  overflow: hidden;
+  background: rgb(233, 232, 232);
+
+&-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond(1060px){
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+&-img{
+  height: 42rem;
+  @include respond(1155px){
+    height: 35rem;
+  }
+  @include respond(381px){
+    height: 25rem;
+  }
+}
+}

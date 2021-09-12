@@ -208,7 +208,7 @@ body {
       background: #e67700;
       top: +0.8rem; }
   .navbar-visible {
-    height: 34.8rem;
+    height: 30.8rem;
     background-color: #fff; }
   .navbar-toggle-active {
     transition: .4s;
@@ -391,6 +391,79 @@ body {
 .img-blur {
   filter: blur(4px); }
 
+.form {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem; }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem; }
+    @media only screen and (max-width: 443px) {
+      .form-row {
+        flex-direction: column; } }
+  .form-label {
+    position: absolute;
+    top: 1.8rem;
+    left: 1rem;
+    font-size: 1.4rem;
+    color: #17243D;
+    transition: .4s; }
+  .form-group {
+    position: relative; }
+  .form-input {
+    height: 3rem;
+    width: 30rem;
+    padding: 1rem;
+    border: none;
+    border-bottom: 1.3px solid #fab005;
+    transition: .3s; }
+    @media only screen and (max-width: 677px) {
+      .form-input {
+        width: 100%; } }
+    .form-input:focus {
+      outline: none; }
+    .form-input:focus ~ .form-label {
+      top: -2rem; }
+    .form-input:valid ~ .form-label {
+      color: #33d133;
+      top: -2rem; }
+    .form-input:valid {
+      border-bottom: 1.3px solid #33d133; }
+    .form-input:invalid ~ .form-label {
+      color: #d16033;
+      top: -2rem; }
+    .form-input:focus:invalid {
+      border-bottom: 1.3px solid #d16033; }
+  .form-textarea {
+    width: 100%;
+    height: 10rem;
+    padding-top: 1.8rem; }
+    .form-textarea:focus {
+      outline: none; }
+    .form-textarea:focus ~ .form-label {
+      top: -2rem; }
+    .form-textarea:valid ~ .form-label {
+      top: -2rem;
+      color: #17243D; }
+    .form-textarea-container {
+      align-self: stretch; }
+  .form-btn {
+    padding: 1rem 3rem;
+    border: none;
+    background-color: #17243D;
+    color: white;
+    transition: .3s; }
+    .form-btn:focus {
+      outline: none; }
+    .form-btn:hover {
+      background-color: #fab005;
+      color: white; }
+    .form-btn-container {
+      align-self: center; }
+
 .hero {
   display: flex;
   height: 92.2vh;
@@ -408,17 +481,11 @@ body {
     .hero {
       margin-top: 4rem; } }
   .hero-img {
-    transform: translateX(100%);
-    animation: move_in_right 1s 2.8s forwards;
     width: 60rem;
     height: auto; }
     @media only screen and (max-width: 408px) {
       .hero-img {
         margin-top: 4rem; } }
-    @media only screen and (max-width: 1167px) {
-      .hero-img {
-        transform: translateX(200%);
-        animation: move_in_right 1.5s 2.8s forwards; } }
     @media only screen and (max-width: 1167px) {
       .hero-img {
         width: 50rem; } }
@@ -432,19 +499,7 @@ body {
       .hero-text {
         font-size: 3rem; } }
     .hero-text-container {
-      transform: translateX(-102%);
-      animation: move_in_left 1s 2.8s  forwards;
       width: 75%; }
-      @media only screen and (max-width: 1167px) {
-        .hero-text-container {
-          transform: translateX(-125%); } }
-      @media only screen and (max-width: 641px) {
-        .hero-text-container {
-          transform: translateX(-150%); } }
-      @media only screen and (max-width: 503px) {
-        .hero-text-container {
-          transform: translateX(-225%);
-          animation: move_in_left 1s 2.8s ease-out forwards; } }
       @media only screen and (max-width: 800px) {
         .hero-text-container {
           display: flex;
@@ -594,3 +649,23 @@ body {
   .intro-hide {
     background-color: #fab005;
     overflow: hidden; }
+
+.contact {
+  overflow: hidden;
+  background: #e9e8e8; }
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 1060px) {
+      .contact-container {
+        flex-direction: column;
+        gap: 5rem; } }
+  .contact-img {
+    height: 42rem; }
+    @media only screen and (max-width: 1155px) {
+      .contact-img {
+        height: 35rem; } }
+    @media only screen and (max-width: 381px) {
+      .contact-img {
+        height: 25rem; } }

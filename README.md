@@ -41,6 +41,7 @@ View Project
  - [Illustrations](https://undraw.co/)
  - [Icons](https://phosphoricons.com/)
  - [User Faces](https://uifaces.co/)
+ - [Animations](https://greensock.com/gsap/)
  
 
   

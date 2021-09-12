@@ -1,0 +1,107 @@
+.form{
+  margin-bottom: 2rem;
+  // width: 30%;
+  display: flex;
+
+  justify-content: center;
+  // align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  &-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    @include respond(443px){
+      flex-direction: column;
+    }
+
+  }
+  &-label{
+    position: absolute;
+    top: 1.8rem;
+    left: 1rem;
+    font-size: 1.4rem;
+    color: $blue-dark;
+    transition: .4s;
+  }
+  &-group{
+    position: relative;
+  }
+
+  &-input{
+    height: 3rem;
+    width: 30rem;
+    @include respond(677px){
+      width: 100%
+    };
+    padding: 1rem;
+    border: none;
+    border-bottom: 1.3px solid $yellow-dark;
+    transition: .3s;
+    &:focus{
+      outline: none;
+    }
+    &:focus ~ .form-label{
+      top: -2rem;
+    }
+
+    &:valid ~ .form-label{
+      color: rgb(51, 209, 51);
+      top: -2rem;
+
+    }
+
+    &:valid{
+      border-bottom: 1.3px solid rgb(51, 209, 51);
+    }
+
+    &:invalid ~ .form-label{
+      color: rgb(209, 96, 51);
+      top: -2rem;
+    }
+
+    &:focus:invalid {
+      border-bottom: 1.3px solid rgb(209, 96, 51);
+    }
+
+  }
+
+  &-textarea{
+    width: 100%;
+    height: 10rem;
+    padding-top: 1.8rem;
+    &:focus{
+      outline: none;
+    }
+    &:focus ~ .form-label{
+      top: -2rem;
+    }
+
+    &:valid ~ .form-label{
+      top: -2rem;
+      color: $blue-dark;
+    }
+    &-container{
+      align-self: stretch;
+    }
+  }
+
+  &-btn{
+    padding: 1rem 3rem;
+    &:focus{
+      outline: none;
+    }
+    border: none;
+    background-color: $blue-dark;
+    color: white;
+    transition: .3s;
+    &:hover{
+      background-color: $yellow-dark;
+      color: white;
+    }
+    &-container{
+      align-self: center;
+    }
+  }
+
+}

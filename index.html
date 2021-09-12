@@ -43,8 +43,7 @@
     </div>
     <div class="navbar-links">
       <ul class="navbar-list">
-        <li class="navbar-item"><a href="#" class="navbar-btn navbar-link">Contact Us</a></li>
-        <li class="navbar-item"><a href="#" class="navbar-btn navbar-link">Find Us</a></li>
+        <li class="navbar-item"><a href="#" data-link="contact"class="navbar-btn navbar-link">Contact Us</a></li>
       </ul>
     </div>
   </header>
@@ -403,6 +402,41 @@
           </div>
         </div>
     </section>
+    <section class="section section-contact contact">
+      <h1 class="heading-primary">Reach To Us</h1>
+      <div class="contact-container">
+        <img src="./img/contact.svg" alt="" class="contact-img">
+        <form action="#" class="form">
+          <div class="form-row">
+            <div class="form-group">
+              <input id="name" type="text" class="form-input" required autocomplete="off">
+              <label for="name" class="form-label">Name</label>
+            </div>
+            <div class="form-group">
+              <input id="email" type="email" class="form-input" required autocomplete="off">
+              <label for="email" class="form-label">Email</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input id="title" type="text" class="form-input" required autocomplete="off">
+              <label for="title" class="form-label">Subject</label>
+            </div>
+            <div class="form-group">
+              <input id="tel" type="tel" class="form-input" required autocomplete="off">
+              <label for="tel" class="form-label">Telephone</label>
+            </div>
+          </div>
+          <div class="form-group form-textarea-container">
+            <textarea class="form-input form-textarea" name="text" id="text" cols="30" rows="10"></textarea>
+            <label for="text" class="form-label">Message</label>
+          </div>
+          <div class="form-group form-btn-container">
+              <button type="submit" class="form-btn">Message!</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 </div> 
   <div class="intro">
@@ -417,7 +451,6 @@
         <span class="intro-text">Award Winning Restaurant.</span>
       </h1>
     </div>
-    
   </div>
 </body>
 </html> 
