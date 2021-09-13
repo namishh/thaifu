@@ -445,9 +445,6 @@ body {
       outline: none; }
     .form-textarea:focus ~ .form-label {
       top: -2rem; }
-    .form-textarea:valid ~ .form-label {
-      top: -2rem;
-      color: #17243D; }
     .form-textarea-container {
       align-self: stretch; }
   .form-btn {
